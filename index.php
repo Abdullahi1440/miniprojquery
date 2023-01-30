@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-sm-8">
 
-                <table class="table table-bordered">
+                <table class="table table-bordered" id="studenttable">
                      <button class="btn btn-success btn-sm fs-right mt-5" id="Addnew">Add new </button>
                     <h1 class="display-5 text-center">Student Details </h1>
                     <thead>
@@ -29,21 +29,7 @@
 
                     </thead>
                     <tbody>
-                        <!-- <tr>
-                            <td>1</td>
-                            <td>mohamed Daahir </td>
-                            <td>form 4</td>
-                            <td>edit </td>
-
-                        </tr>
-
-                        <tr>
-                            <td>02</td>
-                            <td>yusuf Gelle</td>
-                            <td>form 3</td>
-                            <td>edit </td>
-                        </tr> -->
-
+        
 
                     </tbody>
                 </table>
@@ -55,27 +41,31 @@
       <div class="modal-header">
         <h5 class="modal-title">User info </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+      </div> 
+      
       <div class="modal-body">
+          <form id="studentform">
         <label for="studentlabel">StudentId</label>
         <div class="form-group mt-2">
-        <input type="text" class="form-control" name=""id="studentId" placeholder="enter studentId">
+        <input type="text" class="form-control" name="id"id="" placeholder="enter studentId">
         </div>
 
          <div class="form-group mt-2">
          <label for="studentlabel">studentName</label>
-         <input type="text" class="form-control" name=""id="studentName" placeholder="enter studentName">
+         <input type="text" class="form-control" name="name" id="" placeholder="enter studentName">
 
          </div>
          <div class="form-group mt-2 ">
          <label for="studentlabel">studentClass</label>
-            <input type="text"  name="" class="form-control" id="studentClass" placeholder="stuedentClass">
+            <input type="text"  name="class" class="form-control" id="" placeholder="stuedentClass">
          </div>
             
         <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
-      </div>
+        <button type="submit" class="btn btn-primary"name='action' >Save changes</button>
+     
+        </div>
+        </form>
       </div>
    
     </div>
